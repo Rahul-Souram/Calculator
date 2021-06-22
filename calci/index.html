@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <title>calci</title>
+    <link rel="stylesheet" href="calci.css"
+  </head>
+  <body>
+    <div class="container">
+      <form class="calci" name ="form" action="calci.html" method="post">
+        <h1 align="center"><b>CALCULATOR</b></h1>
+        <input id="input" type="text" name="answer">
+        <div id="num">
+          <input type="button" class="button"value="1" onclick="insert(1)">
+          <input type="button" class="button"value="2" onclick="insert(2)">
+          <input type="button" class="button"value="3" onclick="insert(3)">
+          <input type="button" class="button"value="4" onclick="insert(4)">
+          <input type="button" class="button"value="5" onclick="insert(5)">
+          <input type="button" class="button"value="6" onclick="insert(6)">
+          <input type="button" class="button"value="7" onclick="insert(7)">
+          <input type="button" class="button"value="8" onclick="insert(8)">
+          <input type="button" class="button"value="9" onclick="insert(9)">
+          <input  id="zero" type="button" class="button"value="0" onclick="insert(0)">
+        </div><div id="op">
+          <input type="button" class="op-button"value="+" onclick="form.answer.value+='+'">
+          <input type="button" class="op-button"value="-" onclick="form.answer.value+='-'">
+          <input type="button" class="op-button"value="/" onclick="form.answer.value+='/'">
+          <input type="button" class="op-button"value="*" onclick="form.answer.value+='*'">
+        </div>
+        <div>
+          <input type="button" class="equals" value="=" onclick="equals()">
+          <input type="reset" class="equals" name="reset">
+        </div>
+      </form>
+    </div>
+      <script src="calci.js"></script>
+    </body>
+    </html>
+    
